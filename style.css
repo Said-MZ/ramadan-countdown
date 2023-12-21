@@ -65,11 +65,18 @@ h1 {
   font-size: 2rem;
 }
 
+.countdown-info {
+  font-size: small;
+  color: #bcbcbc;
+  text-align: center;
+  margin-top: 3rem;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     padding: 2rem;
     width: 90vw;
-    height: 60vh;
+    height: 75vh;
   }
 
   .countdown {
