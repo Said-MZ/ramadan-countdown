@@ -1,0 +1,93 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url(ali-arif-soydas-uwzPks8CE3k-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  color: azure;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 75vw;
+  height: 40vh;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 50px -6px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.countdown {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.countdown p {
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+.countdown h2 {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+    width: 90vw;
+    height: 60vh;
+  }
+
+  .countdown {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .countdown p {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  .countdown h2 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
